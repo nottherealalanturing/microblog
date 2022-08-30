@@ -8,11 +8,11 @@ class Post < ApplicationRecord
 
   private
 
-  def posts_count
-    author.update(posts_counter: author.posts.count)
-  end
+    def posts_count
+        author.update(posts_counter: author.posts.count)
+    end
 
-  def posts_count
-    comments.last(5)
-  end
+    def posts_count
+        comments.last(5)
+    end
 end
